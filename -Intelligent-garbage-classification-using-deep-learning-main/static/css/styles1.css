@@ -1,0 +1,173 @@
+.background-Image {
+  height: 80%;
+  width: 100%;
+  opacity: 1;
+}
+
+.header-buttons {
+  position: fixed;
+  top: 28px;
+  right: 317px;
+  color: darkblue;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header-buttons1 {
+  position: fixed;
+  top: 28px;
+  right: 188px;
+  color: darkblue;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header-buttons2 {
+  position: fixed;
+  top: 19px;
+  right: 50px;
+  font-size: 14px;
+  width: 118px;
+  height: 32px;
+  background-color: blue;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+  z-index: 100;
+  padding: 50px;
+  top: -39px;
+}
+
+
+
+
+.footer-div {
+  background-color: #0000008f;
+  width: 300px;
+  border: 2px solid #0000008f;
+  padding: 20px;
+  margin: 20px;
+  bottom: 10px;
+  left: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: system-ui;
+  border-top: 2px solid red;
+}
+
+.total-footer {
+  background-color: #00000091;
+  padding: 50px;
+  margin: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyrights {
+  position: absolute;
+  right: 513px;
+  color: white;
+}
+
+.about-hr {
+  width: 76px;
+  position: absolute;
+  top: 91px;
+  left: 70px;
+  border-color: red;
+}
+
+a:hover {
+  color: red;
+}
+
+.about-p {
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 15px;
+}
+
+.upload-icon {
+  font-size: 24px;
+  bottom: 10px;
+  right: 33px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+}
+
+.footer1 a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 14px;
+}
+
+
+.footer1 i {
+  color: red;
+}
+
+.footer1 h4 {
+  color: white;
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.copyRights {
+  position: absolute;
+  right: 511px;
+  color: white;
+  font-family: cursive;
+}
+
+.fa-icons {
+  padding: 20px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+
+.team-header {
+  position: absolute;
+  right: 364px;
+  top: 67px;
+  text-decoration: none;
+  font-size: 17px;
+}

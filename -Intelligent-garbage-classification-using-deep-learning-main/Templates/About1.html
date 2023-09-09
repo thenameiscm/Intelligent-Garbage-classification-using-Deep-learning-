@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <link rel="stylesheet" href="/Static/Css/styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/Static/Javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="header">
+        <h2 style="color: darkblue;position: fixed;top: 10px;">GARBAGE CLASSIFICATION</h2>
+        <a class="header-buttons" href="{{ url_for('home') }}">Home</a>
+        <a class="header-buttons1" href="{{ url_for('about') }}">About</a>
+        <a class="team-header"  href="{{ url_for('team') }}">Team</a>
+        <button class="header-buttons2" id="image-prediction-button" onclick="imageSubmit()">Image Prediction</button>
+    </div>
+
+    <br>
+    <h4>ABOUT</h4>
+    <h4 style="color: lightblue;">ABOUT</h4>
+    <hr class="about-hr">
+    <h1 style="color: darkblue;">ABOUT PROJECT</h1>
+    <br>
+    <h4 style="font-size: 20px;">Problem:</h4>
+    <div style="width: 100%;">
+        <div style="width: 50%;">
+            <p class="about-p">"The accumulation of solid waste in the urban area is becoming a great concern, and it
+                would result in environmental pollution and may be hazardous to human health if it is not properly
+                managed. It is important to have an advanced/intelligent waste management system to manage a variety of
+                waste materials. One of the most important steps of waste management is the separation of the waste into
+                the different components and this process is normally done manually by hand-picking.
+                To simplify the process, we propose an intelligent waste material classification system, which is
+                developed by using the 50-layer residual net pre-train (ResNet-50)
+                Convolutional Neural Network model which is a machine learning tool and serves as the extractor, and
+                Support Vector Machine (SVM) which is used to classify the waste into different groups/types such as
+                glass, metal, paper, and plastic etc. The proposed system is tested on the trash image dataset which was
+                developed by Gary Thung and Mindy Yang, and is able to achieve an accuracy of 87% on the dataset. The
+                separation process of the waste will be faster and intelligent using the proposed waste material
+                classification system without or reducing human involvement."</p>
+        </div>
+        <div style="margin-left: 52%; top: 204px; position: absolute;">
+            <h4 style="font-size: 20px;">Solution:</h4>
+            <p class="about-p">"The present way of separating waste/garbage is the hand-picking method, whereby someone
+                is employed to separate out the different objects/materials. The person, who separate waste, is prone to
+                diseases due to the harmful substances in the garbage. With this in mind, it motivated us to develop an
+                automated system which is able to sort the waste. and this system can take short time to sort the waste,
+                and it will be more accurate in sorting than the manual way. With the system in place, the beneficial
+                separated waste can still be recycled and converted to energy and fuel for the growth of the economy.
+                The system that is developed for the separation of the accumulated waste is based on the combination of
+                Convolutional Neural Network."</p>
+        </div>
+    </div>
+    <button class="upload-icon" onclick="fileSelect()"><i class="fa fa-arrow-up"></i></button>
+
+    <form id="predict-form" method="POST" action="/predict" enctype="multipart/form-data" style="display: none;">
+      <label for="image-file">Insert Your Image</Select></label>
+      <input type="file" id="file" name="file" style="display: none;" accept=".jpg, .jpeg, .png">
+      <br><br>
+      <input type="submit" value="Classify Garbage">
+  </form>
+  <div id="result"></div>
+
+    <div class="footer">
+        {% include 'footer.html' %}
+    </div>
+</body>
+
+</html>

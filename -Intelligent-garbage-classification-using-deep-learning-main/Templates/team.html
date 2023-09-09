@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Team </title>
+    <link rel="stylesheet" href="/Static/Css/team.css">
+    <link rel="stylesheet" href="/Static/Css/styles1.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Css/team.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/Static/Javascript/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="header">
+    <h2 style="color: darkblue;position: fixed;top: 10px;">GARBAGE CLASSIFICATION</h2>
+    <a class="header-buttons" href="{{ url_for('home') }}">Home</a>
+    <a class="header-buttons1" href="{{ url_for('about') }}">About</a>
+    <a class="team-header"  href="{{ url_for('team') }}">Team</a>
+    <button class="header-buttons2" id="image-prediction-button" onclick="imageSubmit()">Image Prediction</button>
+  </div>
+
+    <main class="main"> 
+
+        <div class="web-title">
+            <h2> Team Members</h2>
+            <p> </p>
+        </div>
+
+        <div class="container">
+            <div class="image">
+              <img src="" alt="Image 1">
+            </div>
+            <div class="image">
+              <img src="" alt="Image 2">
+            </div>
+            <div class="image">
+              <img src="" alt="Image 3">
+            </div>
+            <div class="image">
+              <img src="" alt="Image 4">
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="text">
+              <h3>Team Leader</h3>
+              <p>Navyasree</p>
+            </div>
+            <div class="text">
+              <h3>Team Member 1</h3>
+              <p>Ganesh</p>
+            </div>
+            <div class="text">
+              <h3>Team Member 2</h3>
+              <p>Likithabindhu</p>
+            </div>
+            <div class="text">
+              <h3>Team Member 3</h3>
+              <p>Meghana</p>
+            </div>
+           
+  
+        
+    </main>
+
+    <button class="upload-icon" onclick="fileSelect()"><i class="fa fa-arrow-up"></i></button>
+
+    <form id="predict-form" method="POST" action="/predict" enctype="multipart/form-data" style="display: none;">
+      <label for="image-file">Insert Your Image</Select></label>
+      <input type="file" id="file" name="file" style="display: none;" accept=".jpg, .jpeg, .png">
+      <br><br>
+      <input type="submit" value="Classify Garbage">
+  </form>
+  <div id="result"></div>
+    <footer></footer>
+
+<div>
+    <div class="footer">
+      {% include 'footer.html' %}
+    </div>
+  </body>
+</div>
+
+</body>
+</html>
